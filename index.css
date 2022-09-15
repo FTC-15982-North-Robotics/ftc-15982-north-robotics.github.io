@@ -1,4 +1,9 @@
-ronan {
+p {
+  color: green;
+  background-color: navy;
+}
+
+body {
   color: green;
   background-color: navy;
 }

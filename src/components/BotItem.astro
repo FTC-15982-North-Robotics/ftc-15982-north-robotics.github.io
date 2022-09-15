@@ -1,0 +1,22 @@
+---
+export interface Props {
+  URL: string;
+  name: string;
+  date: string;
+  alt?: string;
+}
+
+const { URL, name, alt, date} = Astro.props as Props;
+---
+
+<div>
+    <img src={URL} alt={alt}>
+    <h1>{name}</h1>
+    <h2><em>{date}</em></h2>
+</div>
+
+<style>
+  div {
+    grid: auto auto;
+  }
+</style>

@@ -1,17 +1,19 @@
 ---
-import Bots from '../components/Bots.astro';
-import Hero from '../components/Hero.astro';
-import SponsorUno from '../components/SponsorUno.astro';
-import Layout from '../layouts/Layout.astro';
+import Bots from "../components/Bots.astro";
+import Hero from "../components/Hero.astro";
+import WhoWeAre from "../components/WhoWeAre.astro";
+import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Where's Allen's Wrench - Team 15982">
-	<main>
-		<Hero></Hero>
-		<Bots></Bots>
-		<SponsorUno></SponsorUno>
-	</main>
+  <main>
+    <Hero />
+    <div id="scroll"></div>
+    <WhoWeAre />
+    <Bots />
+  </main>
 </Layout>
 
 <style>
+
 </style>

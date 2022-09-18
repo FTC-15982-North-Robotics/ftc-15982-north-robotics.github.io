@@ -1,0 +1,33 @@
+---
+export interface Props {
+  URL: string;
+  name: string;
+  date: string;
+  alt?: string;
+}
+
+const { URL, name, alt, date } = Astro.props as Props;
+---
+
+<figure class="container">
+  <img src={URL} alt={alt} />
+  <figcaption class="subtitle">
+    {date} - <em>{name}</em>
+  </figcaption>
+</figure>
+
+<style>
+  .container {
+    display: grid;
+    grid-template-rows: auto auto;
+  }
+  .subtitle {
+    grid-row-start: 2;
+    font-size: larger;
+    text-align: center;
+  }
+  img {
+    grid-row-start: 1;
+    width: 100%;
+  }
+</style>

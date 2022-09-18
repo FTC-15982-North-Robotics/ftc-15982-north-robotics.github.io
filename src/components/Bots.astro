@@ -1,11 +1,11 @@
 ---
-import BotItem from "./BotItem.astro";
+import BotItem from "./Lib/BotItem.astro";
 import Header from "./Lib/Header.astro";
 ---
 
-<div>
-  <Header id="scroll">Our Bots</Header>
-  <div>
+<div class="container">
+  <Header >Our Bots</Header>
+  <div class="botlist">
     <BotItem
       URL={"https://mtek3d.com/wp-content/uploads/2018/01/image-placeholder-500x500.jpg"}
       name="Jimmy"
@@ -13,3 +13,16 @@ import Header from "./Lib/Header.astro";
     />
   </div>
 </div>
+
+<style>
+  .container {
+    height: 70vh;
+    padding-bottom: 30vh;
+  }
+  .botlist {
+    display: flex;
+    
+    padding: 0 3em;
+    height: 100%;
+  }
+</style>

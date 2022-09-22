@@ -3,37 +3,19 @@ import Header from "./Lib/Header.astro";
 ---
 
 <div>
-  <Header>Who We Are</Header>
-  <div class="center">
-    <div
-      style="position:relative;width:fit-content;height:fit-content;"
-      class="video"
-    >
-      <a
-        style="position:absolute;top:20px;right:1rem;opacity:0.8;"
-        href="https://clipchamp.com/watch/QNzDd7JleN8?utm_source=embed&utm_medium=embed&utm_campaign=watch"
-      >
-        <img
-          style="height:22px;"
-          src="https://clipchamp.com/e.svg"
-          alt="Made with Clipchamp"
-        />
-      </a>
-      <iframe
-        allowfullscreen
-        style="border:none"
-        src="https://clipchamp.com/watch/QNzDd7JleN8/embed"
-        width="640"
-        height="360"></iframe>
-    </div>
-  </div>
+  <Header>Welcome!</Header>
+  <p>We're team 15982, an ameteur robotics team operating out of 
+    North Kingstown High School in Rhode Island. We compete in the 
+    First Tech Challenge, a robotics competition for students in 
+    grades 7-12. Last year, we built and designed our first robot
+    as freshmen. His name is Jimmy, and you can read about him below!
+    This year, we're using our new skills and knowledge to once again
+    tackle the challenge. We're designing a brand-new robot, </p>
 </div>
+
 <style>
-  .center {
-    display: grid;
-    grid-template-columns: auto 640 auto;
-  }
-  .video {
-    grid-column-start: 2;
+  p {
+    text-align: justify;
+    padding: 0 10em;
   }
 </style>
